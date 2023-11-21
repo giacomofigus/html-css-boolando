@@ -54,20 +54,7 @@ section .card-container img{
     object-fit: cover;
 }
 
-section .card-container #marchio{
-    color: grey;
-}
-
-section .card-container :nth-child(5){
-    color: red;
-}
-
-section .card-container span{
-    color: #1E2B35;
-    font-size: 12px;
-    text-decoration: line-through;
-}
-
+/* CONTAINER DENTRO IMMAGINE */
 section .card-container .heart-container{
     background-color: white;
     width: 50px;
@@ -87,5 +74,74 @@ section .card-container .heart-container i{
 }
 
 section .card-container .heart-container i:hover{
+    color: red;
+}
+
+section .card-container .red-container{
+    background-color: #FF0000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    position: absolute;
+    bottom: 30px;
+    left:0;
+    padding: 3px;
+}
+
+section .card-container .green-container{
+    background-color: green;
+    color: white;
+
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    padding: 3px;
+}
+
+section .card-container .green-container-6 {
+    background-color: green;
+    color: white;
+
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    padding: 3px;
+}
+
+/* PARTE TESTUALE */
+section .card-container #marchio{
+    color: grey;
+}
+
+section .card-container #price{
+    color: red;
+}
+
+section .card-container span{
+    color: #1E2B35;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+section .card-container .heart{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+section .card-container .heart i{
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 23px;
+}
+
+section .card-container .heart i:hover{
     color: red;
 }
