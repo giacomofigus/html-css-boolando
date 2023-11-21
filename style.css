@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #FF6900 ;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    gap:10px;
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 18px;
+}
+
+header nav img{
+    width: 150px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-block: 50px;
+}
+
+section .card-container{
+    width: 300px;
+    height: 450px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+section .card-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .card-container #marchio{
+    color: grey;
+}
+
+section .card-container :nth-child(5){
+    color: red;
+}
+
+section .card-container span{
+    color: #1E2B35;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+section .card-container .heart-container{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+section .card-container .heart-container i{
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 23px;
+}
+
+section .card-container .heart-container i:hover{
+    color: red;
+}
